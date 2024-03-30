@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import Part1 from './Components/Part1';
+import HomePage from './Pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hi</h1>
     
-      <Part1/>
+    <div className="App">
+     <HomePage/>
     </div>
   );
 }
