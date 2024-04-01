@@ -1,0 +1,14 @@
+.title{
+    color: blue;
+    font-size: 30px;
+}
+ 
+.subTitle{
+    color: rgb(170, 0, 255);
+    font-size: 25px;
+}
+
+.btn{
+    background-color: greenyellow;
+    color: black;
+}
