@@ -1,8 +1,12 @@
 import React from 'react'
+import './HomePage.css';
+
 import TopicBox from '../Components/TopicBox'
 import Content from '../Components/Content'
 import { Link } from 'react-router-dom'
+
 export default function HomePage() {
+  
   return (
     <div>
       <h1>Home Page</h1>
@@ -18,6 +22,9 @@ export default function HomePage() {
 
       <Link to="/About"> Go to the About us</Link>
       <Link to="/Contact"> Go to the Contact us</Link>
+
+      
+      
 
     </div>
   )
