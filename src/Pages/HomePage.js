@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomePage.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import TopicBox from '../Components/TopicBox'
 import { Link } from 'react-router-dom'
@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom'
 function btnClick(){
   alert("hi");
 }
+
+
 
 export default function HomePage() {
   //let count = 0;
@@ -23,6 +25,13 @@ export default function HomePage() {
     //count-+1;
     setCount(count-1);
   };
+
+  useEffect(()=>{
+    //What I want to do
+    console.log(`New count is : ${count}`);
+  },[count]//Dependancy arr
+  
+  )
   
   
   return (
