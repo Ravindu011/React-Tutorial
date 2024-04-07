@@ -5,6 +5,10 @@ import Accordion from 'react-bootstrap/Accordion';
 import TopicBox from '../Components/TopicBox'
 import { Link } from 'react-router-dom'
 
+function btnClick(){
+  alert("hi");
+}
+
 export default function HomePage() {
   //let count = 0;
   const [count, setCount] = useState(0);
@@ -28,7 +32,7 @@ export default function HomePage() {
         <span>this is the  </span>
       </TopicBox>
       <TopicBox food="rice" price="RS 400">
-        <button>Press this</button>
+        <button onClick={btnClick}> Press this</button>
       </TopicBox>
       <TopicBox food="Hoppers" price="RS 30">
         <p>hello everyone</p>

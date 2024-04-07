@@ -2,8 +2,11 @@ import './App.css';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import HomePage from './Pages/HomePage';
-import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import NavBar1 from './Components/NavBar1';
+import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+
+//import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+//import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
@@ -12,10 +15,14 @@ function App() {
   return (
     <div>
       <NavBar1/>
+
+      
       
    <Router>
+    
 
         <Switch>
+          
 
           <Route exact path="/">
             <HomePage/>
@@ -32,6 +39,17 @@ function App() {
         </Switch>
      
     </Router>
+
+    {/* <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage/>}></Route>
+      <Route path="/About" element={<About/>}></Route>
+      <Route path="/Contact" element={<Contact/>}></Route>
+
+    </Routes>
+    </BrowserRouter> */}
+
+
     </div>
     
     
